@@ -24,6 +24,7 @@ def get_steam_games(request):
             "link": app["link"],
             "img": app["img"]
         } for app in all_apps.get("apps", [])]  
+        print(formatted_apps)
         return JsonResponse({"games": formatted_apps})
     
     except json.JSONDecodeError:
