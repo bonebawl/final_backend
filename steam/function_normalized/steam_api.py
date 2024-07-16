@@ -20,7 +20,7 @@ def get_steam_games(request):
         formatted_apps = [{
             "ID": app["id"],
             "name": app["name"],
-            "price": app["price"],
+            "price": "To Be Released!" if app["price"] is None or app["price"] == "" else app["price"],
             "link": app["link"],
             "img": app["img"]
         } for app in all_apps.get("apps", [])]  
