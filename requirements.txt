@@ -1,0 +1,7 @@
+Django==5.0.6
+djangorestframework
+django-cors-headers
+wikipedia-api
+python-steam-api
+gunicorn
+dj-database-url
